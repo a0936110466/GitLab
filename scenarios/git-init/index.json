@@ -12,9 +12,10 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal",
-    "uimessage": "",
-    "terminal": "bash"
+  "uilayout": "editor-terminal",
+  "imageid": "ubuntu:2004",
+  "uimessage": "",
+  "terminal": "bash"
   },
   "steps": [
     {
