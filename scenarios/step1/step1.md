@@ -1,4 +1,7 @@
+````
 #!/bin/bash
+
+```{{exec interrupt}}
 
 # Step 1: 建立模擬用的遠端裸儲存庫
 mkdir -p /root/remote-repo.git
@@ -18,3 +21,4 @@ git push -u origin main
 
 # Step 4: 顯示提示讓學員知道可以開始
 echo -e "\n✅ Git 專案初始化完成！你現在可以進入 ~/myrepo 目錄，開始進行修改與 push 練習。\n"
+````
