@@ -1,7 +1,4 @@
-````
-#!/bin/bash
-
-```{{exec interrupt}}
+`#!/bin/bash`{{exec interrupt}}
 
 # Step 1: 建立模擬用的遠端裸儲存庫
 mkdir -p /root/remote-repo.git
