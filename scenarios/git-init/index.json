@@ -1,26 +1,18 @@
+
 {
-  "title": "Git Init 入門",
+  "title": "Git 教學",
   "description": "學習如何使用 git init 建立一個新的 Git 倉庫",
-  "difficulty": "beginner",
-  "time": "10 minutes",
   "details": {
     "intro": {
       "text": "intro.md"
     },
-    "finish": {
-      "text": "finish.md"
-    }
+    "steps": [
+      {
+        "text": "step1.md"
+      }
+    ]
   },
-  "environment": {
-   "uilayout": "terminal",
-   "imageid": "ubuntu",
-   "terminal": "bash"
-  },
-  "steps": [
-    {
-      "title": "初始化 Git",
-      "text": "step1.md"
-    }
-  ]
+  "backend": {
+    "imageid": "ubuntu"
+  }
 }
-
