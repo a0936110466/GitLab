@@ -12,9 +12,8 @@
     }
   },
   "environment": {
-   "uilayout": "editor-terminal",
-   "imageid": "ubuntu:20.04",
-   "uimessage": "",
+   "uilayout": "terminal",
+   "imageid": "ubuntu",
    "terminal": "bash"
   },
   "steps": [
