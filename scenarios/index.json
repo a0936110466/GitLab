@@ -1,0 +1,22 @@
+
+{
+  "title": "Git 教學",
+  "description": "學習如何使用 git init 建立一個新的 Git 倉庫",
+  "details": {
+    "intro": {
+      "title": "Intro",
+      "text": "intro/intro.md"
+    },
+    "steps": [
+      {
+        "title": "Step1",
+        "text": "step1/step1.md",
+        "foreground" : "step1/foreground.sh",
+        "background" : "step1/background.sh"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
