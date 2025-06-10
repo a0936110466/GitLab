@@ -10,9 +10,10 @@ cd /root/local-project2
 💡 步驟二 ：模擬開發者修改並嘗試推送
 
 ```bash
+git checkout dev_login
 echo "Modified by developer B1887" >> project3.txt
-git add project.txt
-git commit -m "b1887: update project.txt"
+git add project3.txt
+git commit -m "[你的員編]update project3.txt"
 git push
 ```
 

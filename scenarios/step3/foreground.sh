@@ -16,9 +16,9 @@ git init
 git config user.name "Dev A"
 git config user.email "a@example.com"
 git add project3.txt
-git commit -m "Initial commit from Dev A on dev_login"
+git commit -m "[devA]Initial commit from Dev A on dev_login"
 git push -u origin dev_login
 echo "Modified by developer A" >> project3.txt
 git add project3.txt
-git commit -m "Dev A: update project3.txt"
+git commit -m "[devA]update project3.txt"
 git push

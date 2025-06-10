@@ -28,13 +28,13 @@ git checkout -b dev_login
 
 ```bash
 # ➤ 建立一個新檔案
-echo "Hello Git learners,This is project2" > project2.txt
+echo "This is a local project2 file for login" > project2.txt
 
 # ➤ 將檔案加入 Git 管理
 git add project2.txt
 
 # ➤ 提交檔案並加上說明
-git commit -m "Add project2.txt on dev_login branch"
+git commit -m "[你的員編]Add project2.txt on dev_login branch"
 
 # ➤ 將變更推送到遠端儲存庫
 git push -u origin dev_login
@@ -59,5 +59,8 @@ git push origin main
 💡 步驟五 ：查詢推送合併結果
 
 ```bash
-git show main:project2.txt
+查看檔案 commit 紀錄,查詢 commit hash
+git log --oneline -- project2.txt
+查詢檔案目前於存在哪些分支
+git branch --contains 「commit hash」
 ```

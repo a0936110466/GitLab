@@ -49,7 +49,7 @@ git init --initial-branch=main
 git add project1.txt
 
 # ➤ 提交檔案
-git commit -m "Add project1.txt"
+git commit -m "[ˊ 你的員編]Add project1.txt"
 ```
 
 💡 步驟五：連接模擬遠端儲存庫並推送
@@ -62,9 +62,10 @@ git remote add origin /root/remote-repo.git
 git push -u origin main
 ```
 
-💡 步驟六：查看及推送檔案
+💡 步驟六：查看及推送檔案結果
 
 ```bash
-cd /root/remote-repo.git
-git show HEAD:project1.txt
+查看commit log
+git log
+git show main:project1.txtgit
 ```
