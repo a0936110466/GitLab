@@ -1,7 +1,7 @@
 本練習將完成 ：
 建立一個模擬遠端儲存庫(remote-repo.git)
 → 建立本地開發資料夾與檔案(porject1.txt)
-→ 將本地檔案（porject1.txt）推送到模擬遠端儲存庫(remote-repo.git)
+→ 將本地檔案（porject1.txt）推送到模擬遠端儲存庫 main 分支(remote-repo.git)
 
 💡 步驟ㄧ ：設定 Git 的使用者資訊，包含名稱與 email，這些資訊會出現在你的每一次 commit 紀錄中。
 
