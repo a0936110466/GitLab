@@ -1,6 +1,4 @@
-使用 bash 執行腳本
-`#!/bin/bash`{{exec interrupt}}
-
+本練習將完成 ：建立一個模擬遠端儲存庫 → 建立本地儲存庫並連接遠端 → 建立初始檔案並提交
 
 💡 設定 Git 的使用者資訊，包含名稱與 email，這些資訊會出現在你的每一次 commit 紀錄中。
 
@@ -15,7 +13,6 @@ git config --global user.email "你的信箱"
 
 💡 請依序輸入以下三行指令來建立模擬遠端儲存庫(類似建立一個github 環境)：
 
-```bash
 # ➤ 建立資料夾
 mkdir -p /root/remote-repo.git
 
@@ -51,3 +48,4 @@ git commit -m "Initial commit"
 # ➤ 將變更推送到遠端儲存庫
 git push -u origin main
 
+```

@@ -1,7 +1,7 @@
 
 {
-  "title": "Git 教學",
-  "description": "學習如何使用 git init 建立一個新的 Git 倉庫",
+  "title": "Git理論與實務應用",
+  "description": "不同情境模擬實作練習，了解git流程及熟習指令操作",
   "details": {
     "intro": {
       "title": "Intro",
@@ -9,13 +9,13 @@
     },
     "steps": [
       {
-        "title": "Step1",
+        "title": "實作練習1",
         "text": "step1/step1.md",
         "foreground" : "step1/foreground.sh",
         "background" : "step1/background.sh"
       },
       {
-        "title": "Step2",
+        "title": "實作練習2",
         "text": "step2/step2.md",
         "foreground" : "step2/foreground.sh",
         "background" : "step2/background.sh"
