@@ -10,11 +10,12 @@ mkdir -p /root/local-project
 cd /root/local-project
 
 # ➤ 建立一個檔案
-echo "This is a local project file." > project.txt
-
+echo "This is a local project2 file." > project2.txt
+```
 
 💡 步驟二：初始化 Git 與提交檔案
 
+```bash
 # ➤ 初始化為 Git 儲存庫
 git init
 
@@ -22,15 +23,15 @@ git init
 git add project.txt
 
 # ➤ 提交檔案
-git commit -m "Add project.txt"
+git commit -m "Add project2.txt"
+```
 
 💡 步驟三：連接模擬遠端儲存庫並推送
 
+```bash
 # ➤ 設定遠端位置（origin）
 git remote add origin /root/remote-repo.git
 
 # ➤ 推送到遠端 main 分支
 git push -u origin main
-
-
 ```
