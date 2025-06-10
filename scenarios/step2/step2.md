@@ -4,10 +4,10 @@
 
 ```bash
 # ➤ 建立模擬的開發資料夾
-mkdir -p /root/local-project
+mkdir -p /root/local-project2
 
 # ➤ 進入該資料夾
-cd /root/local-project
+cd /root/local-project2
 
 # ➤ 建立一個檔案
 echo "This is a local project2 file." > project2.txt

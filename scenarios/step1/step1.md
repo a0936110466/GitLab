@@ -4,7 +4,7 @@
 
 ```bash
 # ➤ 設定使用者名稱
-git config --global user.name "你的名字"
+git config --global user.name "你的名字or員編"
 
 # ➤ 設定使用者信箱
 git config --global user.email "你的信箱"
@@ -30,17 +30,17 @@ git init --bare --initial-branch=main
 cd /root
 
 # ➤ 從遠端 clone 出一份本地儲存庫
-git clone /root/remote-repo.git myrepo
+git clone /root/remote-repo.git local-project1
 
 # ➤ 進入本地儲存庫目錄
-cd myrepo
+cd local-project1
 ```
 
 💡 建立初始檔案並提交
 
 ```bash
 # ➤ 建立一個新檔案
-echo "Hello Git learners!,This is prect1" > preject1.txt
+echo "Hello Git learners,This is project1" > project1.txt
 
 # ➤ 將檔案加入 Git 管理
 git add info.txt
