@@ -2,38 +2,53 @@
 
 `#!/bin/bash`{{exec interrupt}}
 
-# Step 1: 設定 Git 使用者資訊
 
-設定 Git 的使用者名稱與 email，這是 commit 時會記錄的作者資訊。
+💡 設定 Git 的使用者資訊，包含名稱與 email，這些資訊會出現在你的每一次 commit 紀錄中。
 
-`git config --global user.name "Lon"`{{exec}}
+```bash
+# ➤ 設定使用者名稱
+git config --global user.name "你的名字"
 
-`git config --global user.email "lon@example.com"`{{exec}}
+# ➤ 設定使用者信箱
+git config --global user.email "你的信箱"
 
-# Step 2: 建立模擬用的遠端儲存庫(類似建立一個github 環境)
 
-建立一個空資料夾當作遠端 repo :
-`mkdir -p /root/remote-repo.git`{{exec}}
 
-`cd /root/remote-repo.git`{{exec}}
+💡 請依序輸入以下三行指令來建立模擬遠端儲存庫(類似建立一個github 環境)：
 
-始化為「儲存庫」＝沒有檔案內容，只有 Git 版本記錄 :
-`git init --bare --initial-branch=main`{{exec}}
+```bash
+# ➤ 建立資料夾
+mkdir -p /root/remote-repo.git
 
-# Step 3: 建立本地儲存庫並連接遠端
+# ➤ 進入資料夾
+cd /root/remote-repo.git
 
-`cd /root`{{exec interrupt}}
+# ➤ 初始化為 bare repository，「儲存庫」＝沒有檔案內容，只有 Git 版本記錄 :
+git init --bare --initial-branch=main
 
-`git clone /root/remote-repo.git myrepo`{{exec}}
 
-`cd myrepo`{{exec interrupt}}
+💡 建立本地儲存庫並連接遠端
 
-# Step 4: 建立初始檔案並提交
+# ➤ 回到根目錄
+cd /root
 
-`echo "Hello Git learners!" > info.txt`{{exec}}
+# ➤ 從遠端 clone 出一份本地儲存庫
+git clone /root/remote-repo.git myrepo
 
-`git add info.txt`{{exec interrupt}}
+# ➤ 進入本地儲存庫目錄
+cd myrepo
 
-`git commit -m "Initial commit"`{{exec}}
 
-`git push -u origin main`{{exec}}
+💡 建立初始檔案並提交
+# ➤ 建立一個新檔案
+echo "Hello Git learners!" > info.txt
+
+# ➤ 將檔案加入 Git 管理
+git add info.txt
+
+# ➤ 提交檔案並加上說明
+git commit -m "Initial commit"
+
+# ➤ 將變更推送到遠端儲存庫
+git push -u origin main
+
