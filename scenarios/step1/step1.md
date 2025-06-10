@@ -1,5 +1,4 @@
-# 使用 bash 執行腳本
-
+使用 bash 執行腳本
 `#!/bin/bash`{{exec interrupt}}
 
 
