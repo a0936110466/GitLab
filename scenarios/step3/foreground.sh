@@ -1,11 +1,6 @@
 
 #!/bin/bash
 
-# 建立模擬遠端儲存庫（如果尚未存在）
-mkdir -p /root/remote-repo.git
-cd /root/remote-repo.git
-git init --bare --initial-branch=main
-
 # 建立開發者 A 的 clone 並推送內容
 cd /root
 git clone /root/remote-repo.git devA
