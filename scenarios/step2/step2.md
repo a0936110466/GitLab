@@ -4,7 +4,7 @@ clone 模擬遠端儲存庫(remote-repo.git) 至本地資料夾(local-project2)
 → 建立初始檔案並提交（project2.txt）
 → 推送到模擬遠端儲存庫(remote-repo.git)
 
-💡 建立本地儲存庫並連接遠端
+💡 步驟一 ：建立本地儲存庫並連接遠端
 
 ```bash
 # ➤ 回到根目錄
@@ -17,13 +17,14 @@ git clone /root/remote-repo.git local-project2
 cd local-project2
 ```
 
-💡 建立並切換到新的功能分支 dev_login
+💡 步驟二 ：建立並切換到新的功能分支 dev_login
 
 ```bash
 # ➤ 建立並切換到 dev_login 分支
 git checkout -b dev_login
-💡 建立初始檔案並提交
 ```
+
+💡 步驟三 ：建立初始檔案並提交
 
 ```bash
 # ➤ 建立一個新檔案
@@ -39,7 +40,7 @@ git commit -m "Add project2.txt on dev_login branch"
 git push -u origin dev_login
 ```
 
-💡 切回 main 並合併 dev_login
+💡 步驟四 ：切回 main 並合併 dev_login
 
 ```bash
 # ➤ 切換回 main 分支
@@ -53,4 +54,10 @@ git merge origin/dev_login
 
 # ➤ 將 main 推送到遠端更新內容
 git push origin main
+```
+
+💡 步驟五 ：查詢推送合併結果
+
+```bash
+git show main:project2.txt
 ```

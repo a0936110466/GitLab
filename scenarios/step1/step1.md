@@ -43,9 +43,9 @@ echo "This is a local project1 file." > project1.txt
 
 ```bash
 # ➤ 初始化為 Git 儲存庫
-git init
+git init --initial-branch=main
 
-# ➤ 加入檔案到版本控制
+# ➤ 加入檔案到版本控制cd
 git add project1.txt
 
 # ➤ 提交檔案
