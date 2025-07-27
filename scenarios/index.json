@@ -31,6 +31,12 @@
         "text": "step4/step4.md",
         "foreground" : "step4/foreground.sh",
         "background" : "step4/background.sh"
+      },
+      {
+        "title": "實作練習5",
+        "text": "step5/step5.md",
+        "foreground" : "step5/foreground.sh",
+        "background" : "step5/background.sh"
       }
     ]
   },
