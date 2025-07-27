@@ -22,7 +22,7 @@ mkdir -p /root/remote-repo.git
 # ➤ 進入資料夾
 cd /root/remote-repo.git
 
-# ➤ 初始化為 bare repository，「儲存庫」＝沒有檔案內容，只有 Git 版本記錄 :
+# ➤ 初始化為 bare repository，--bare建立「裸儲存庫」，不包含工作目錄與實際檔案，僅有 .git 結構( it管理的物件與記錄) :
 git init --bare --initial-branch=main
 ```
 
