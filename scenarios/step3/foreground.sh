@@ -9,15 +9,15 @@ cd devA
 
 
 # ➤ 建立並切換到 dev_login 分支
-git checkout  dev_login
+git checkout  dev/login
 
 echo "Add by DevA" > project3.txt
 git init
 git config user.name "Dev A"
 git config user.email "a@example.com"
 git add project3.txt
-git commit -m "[devA]Initial commit from Dev A on dev_login"
-git push -u origin dev_login
+git commit -m "[devA]Initial commit from Dev A on dev/login"
+git push -u origin dev/login
 echo "Modified by developer A" >> project3.txt
 git add project3.txt
 git commit -m "[devA]update project3.txt"

@@ -45,11 +45,11 @@ echo "This is a local project1 file." > project1.txt
 # ➤ 初始化為 Git 儲存庫
 git init --initial-branch=main
 
-# ➤ 加入檔案到版本控制cd
+# ➤ 加入檔案到版本控制
 git add project1.txt
 
-# ➤ 提交檔案
-git commit -m "[ˊ 你的員編]Add project1.txt"
+# ➤ 提交檔案(輸入commit message)
+git commit -m "[你的員編]Add project1.txt"
 ```
 
 💡 步驟五：連接模擬遠端儲存庫並推送
@@ -67,5 +67,5 @@ git push -u origin main
 ```bash
 查看commit log
 git log
-git show main:project1.txtgit
+git show main:project1.txt
 ```

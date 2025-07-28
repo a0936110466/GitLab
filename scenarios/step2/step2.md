@@ -21,7 +21,7 @@ cd local-project2
 
 ```bash
 # ➤ 建立並切換到 dev/login 分支
-git checkout -b dev/login
+git checkout -b dev/login (git switch -c dev/login)
 ```
 
 💡 步驟三 ：建立初始檔案並提交
