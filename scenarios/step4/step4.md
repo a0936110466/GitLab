@@ -61,7 +61,7 @@ git log --oneline
 
 ```bash
 # ➤ 切回原本的開發分支
-git checkout feature/login
+git checkout dev/login_v1
 
 # ➤ 查看目前 stash 清單
 git stash list
