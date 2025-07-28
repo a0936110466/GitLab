@@ -19,6 +19,17 @@ git push
 ```
 
 💡 步驟三 ： 拉取遠端內容並解決衝突
+# 會看到 project3.txt 出現 <<<<<<< HEAD 等衝突標記
+cat project3.txt
+
+# 解決衝突：手動修改檔案 → 保留你要的版本或合併
+# 例如：
+# Start of file
+# >>>>>>> HEAD
+# Modified by Dev B1887
+# =======
+# Modified by Dev A
+# <<<<<<<
 
 ```bash
 git pull origin dev/login
@@ -29,8 +40,10 @@ cat project3.txt
 💡 步驟四 ： 完成衝突解決並推送
 
 ```bash
-git add project.txt
-git commit
+git add project3.txt
+git commit  -m "[B1887]resolve conflict"
 git push
 
 ```
+
+

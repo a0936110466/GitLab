@@ -1,24 +1,26 @@
-# 建立模擬遠端儲存庫（如果尚未存在）
+# 建立模擬遠端儲存庫
 mkdir -p /root/remote-repo.git
 cd /root/remote-repo.git
 git init --bare --initial-branch=main
 
+# 開發者 A clone 儲存庫
 cd /root
 git clone /root/remote-repo.git devA
 cd devA
 
+# 建立 dev/login 分支
+git checkout -b dev/login
 
-# ➤ 建立並切換到 dev_login 分支
-git checkout  dev/login
+# 加入範例檔案
+echo -e "Start of file\nLine to modify\nEnd of file" > project3.txt
 
-echo "Add by DevA" > project3.txt
-git init
 git config user.name "Dev A"
 git config user.email "a@example.com"
 git add project3.txt
-git commit -m "[devA]Initial commit from Dev A on dev/login"
+git commit -m "[devA]Initial commit"
 git push -u origin dev/login
-echo "Modified by developer A" >> project3.txt
-git add project3.txt
-git commit -m "[devA]update project3.txt"
+
+# 修改第二行內容
+sed -i '2s/.*/Modified by Dev A/' project3.txt
+git commit -am "[devA]Update line for conflict demo"
 git push
