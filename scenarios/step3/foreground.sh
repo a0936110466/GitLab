@@ -19,11 +19,12 @@ git config user.email "a@example.com"
 git add project3.txt
 git commit -m "[devA]Initial commit"
 git push -u origin dev/login
-
+cd /root
+git clone /root/remote-repo.git local-project3
 # 修改第二行內容
+cd /root/devA
 sed -i '2s/.*/Modified by Dev A/' project3.txt
 git commit -am "[devA]Update line for conflict demo"
 git push
 
-cd /root
-git clone /root/remote-repo.git local-project3
+
