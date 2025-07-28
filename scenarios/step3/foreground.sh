@@ -24,7 +24,7 @@ git clone -b dev/login /root/remote-repo.git local-project3
 # 修改第二行內容
 cd /root/devA
 sed -i '2s/.*/Modified by Dev A/' project3.txt
-git commit -am "[devA]Update line for conflict demo"
-git push
+git commit -m "[devA]Update line for conflict demo"
+git push -u origin dev/login
 
 
