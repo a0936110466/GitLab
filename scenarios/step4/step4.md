@@ -7,10 +7,11 @@
 ```bash
 
 # ➤ 建立並切換到開發分支
-git checkout -b dev/login
+git checkout -b dev/login_v1
 
 # ➤ 模擬一段開發中的修改 (你應該會看到 login.js 是「modified」狀態，但尚未 commit。)
 echo "Login UI feature in progress..." >> login.js
+git add login.js
 
 # ➤ 查看目前修改狀況
 git status
