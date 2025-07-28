@@ -2,20 +2,21 @@
 模擬 Git 衝突的產生與解決,已為你預先建立好一個遠端儲存庫（/root/remote-repo.git），並由「開發者 A」提交並推送了一份檔案更新(project3.txt)。
 你現在的角色是「開發者 B」，請嘗試對相同檔案進行修改並推送，將會遇到版本衝突，接著學習如何解決。
 
-💡 步驟一：切換到 local-project3 的工作目錄
-
-```bash
+# 步驟一：切換到 local-project3 的工作目錄
+cd /root
+git clone -b dev/login /root/remote-repo.git local-project3
 cd local-project3
-```
 
-💡 步驟二 ：模擬開發者修改並嘗試推送
-
-```bash
+# 步驟二：模擬 Dev B 修改第二行並提交
 sed -i '2s/.*/Modified by Dev B1887/' project3.txt
+git config user.name "Dev B"
+git config user.email "b@example.com"
 git add project3.txt
-git commit -m "[你的員編]update line for conflict demo"
+git commit -m "[B1887]Update line for conflict demo"
+
+# 嘗試推送，這裡應該會失敗（因為 Dev A 已經先推）
 git push
-```
+
 
 💡 步驟三 ： 拉取遠端內容並解決衝突
 
