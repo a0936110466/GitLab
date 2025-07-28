@@ -5,7 +5,9 @@
 💡 步驟一：切換到 local-project2 的工作目錄
 
 ```bash
-cd /root/local-project2
+cd /root
+git clone /root/remote-repo.git local-project3
+cd local-project3
 ```
 
 💡 步驟二 ：模擬開發者修改並嘗試推送
