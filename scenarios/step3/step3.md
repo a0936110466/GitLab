@@ -21,8 +21,7 @@ git push
 💡 步驟三 ： 拉取遠端內容並解決衝突
 
 ```bash
-git pull origin main
-
+git pull origin dev/login
 cat project3.txt
 
 ```
