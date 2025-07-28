@@ -24,3 +24,6 @@ git push -u origin dev/login
 sed -i '2s/.*/Modified by Dev A/' project3.txt
 git commit -am "[devA]Update line for conflict demo"
 git push
+
+cd /root
+git clone /root/remote-repo.git local-project3
