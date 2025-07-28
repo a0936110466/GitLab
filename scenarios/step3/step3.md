@@ -12,14 +12,17 @@ cd /root/local-project2
 
 ```bash
 git checkout dev/login
-echo "Modified by developer B1887" >> project3.txt
+sed -i '2s/.*/Modified by Dev B1887/' project3.txt
 git add project3.txt
-git commit -m "[你的員編]update project3.txt"
+git commit -m "[你的員編]update line for conflict demo"
 git push
 ```
 
 💡 步驟三 ： 拉取遠端內容並解決衝突
-# 會看到 project3.txt 出現 <<<<<<< HEAD 等衝突標記
+
+```bash
+git pull origin dev/login
+會看到 project3.txt 出現 <<<<<<< HEAD 等衝突標記
 cat project3.txt
 
 # 解決衝突：手動修改檔案 → 保留你要的版本或合併
@@ -31,9 +34,6 @@ cat project3.txt
 # Modified by Dev A
 # <<<<<<<
 
-```bash
-git pull origin dev/login
-cat project3.txt
 
 ```
 
