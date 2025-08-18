@@ -19,7 +19,7 @@ git config user.email "a@example.com"
 git add project3.txt
 git commit -m "[devA]Initial commit"
 git push -u origin dev/login
-#修改第二行內容前先clone(local-project3)
+#修改第二行內容前先clone
 cd /root
 git clone -b dev/login /root/remote-repo.git local-project3
 # 修改第二行內容並推送
