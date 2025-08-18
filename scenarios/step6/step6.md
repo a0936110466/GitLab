@@ -12,15 +12,34 @@ git branch
 💡 步驟二 ：合併commit
 
 ```bash
-# ➤ 使用rebase重新整理 commit 歷史
-git rebase -i HEAD~3
+# ➤ 使用rebase重新整理 commit 歷史(這個指令會讓你重新編排 整個分支的所有 commit)
+git rebase -i --root
 
-# ➤ 修改為squash，將第二和第三行的 pick 改成 squash 或 s：
+# ➤ 修改為squash，將第二和第三行的 pick 改成 squash 或 s(將該 commit 的內容合併到前一個 commit，並一起編輯 commit message)：
+pick 890f4e8 [devC] Initial commit
+squash 2eccdeb [devC] commit2
+squash 622492b [devC] commit3
 
+# ➤ 編輯合併後的 commit message
+[devC] 合併三次 commit：Initial + commit2 + commit3
 
+# ➤ 推送到遠端 
+git push origin dev/project6 --force
 
-# ➤ 查看歷史紀錄
+🔍 為什麼要加 --force？
+因為你使用了 rebase 或 reset 改寫了 commit 歷史，這會讓本地的 commit 與遠端的 commit 不一致。
+Git 預設會拒絕推送「歷史被改寫」的分支，除非你強制推送。
+
 
 ```
 
+💡 步驟三 ：檢查是否合併成功
+```bash
 
+# ➤ 檢查 commit 數量
+git log --oneline
+
+# ➤ 檢查檔案內容是否包含三次修改
+cat project6.txt
+
+```
