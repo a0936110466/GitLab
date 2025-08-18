@@ -17,10 +17,12 @@ git commit -m "[devC] Initial commit"
 
 # 第二次commit
 sed -i '2s/.*/commit2/' project6.txt
+git add project6.txt
 git commit -m "[devC] commit2"
 
 
 # 第三次commit
 sed -i '3s/.*/commit3/' project6.txt
+git add project6.txt
 git commit -m "[devC] commit3"
 
