@@ -5,16 +5,22 @@
 💡 步驟一：切換到 local-project3 的工作目錄
 
 ```bash
-cd local-project3
+cd /root
+git clone -b dev/login /root/remote-repo.git devB
+cd devB
+
+
 ```
 
 💡 步驟二 ：模擬開發者修改並嘗試推送
 
 ```bash
-sed -i '2s/.*/Modified by Dev B1887/' project3.txt
+sed -i '2s/.*/Modified by Dev B/' project3.txt
+git config user.name "Dev B"
+git config user.email "b@example.com"
 git add project3.txt
-git commit -m "[你的員編]update line for conflict demo"
-git push
+git commit -m "[devB]Update line for conflict demo"
+
 ```
 
 💡 步驟三 ： 拉取遠端內容並解決衝突
