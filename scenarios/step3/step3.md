@@ -17,14 +17,15 @@ sed -i '2s/.*/Modified by Dev B/' project3.txt
 git config user.name "Dev B"
 git config user.email "b@example.com"
 git add project3.txt
-git commit -m "[devB]Update line for conflict demo"
+git commit -m "[feature][project3]Update line for conflict demo"
 
 ```
 
 💡 步驟三 ： 拉取遠端內容並解決衝突
 
 ```bash
-git pull --no-rebase origin dev/login
+git fetch
+git merge
 
 cat project3.txt
 
@@ -46,9 +47,11 @@ nano project3.txt
 
 ```bash
 git add project3.txt
-git commit  -m "[B1887]resolve conflict"
+git commit  -m "[feature][project3]resolve conflict"
 git push
 
+#查看檔案
+git show dev/login:project3.txt 
 ```
 
 

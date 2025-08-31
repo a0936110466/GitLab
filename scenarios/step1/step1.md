@@ -49,7 +49,7 @@ git init --initial-branch=main
 git add project1.txt
 
 # ➤ 提交檔案(輸入commit message)
-git commit -m "[你的員編]Add project1.txt"
+git commit -m "[feature][project1]Add project1.txt"
 ```
 
 💡 步驟五：連接模擬遠端儲存庫並推送

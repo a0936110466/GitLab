@@ -1,6 +1,6 @@
 本練習將完成 ：
 clone 模擬遠端儲存庫(remote-repo.git) 至本地資料夾(local-project2)
-→ 建立並切換到新分支（dev_login)
+→ 建立並切換到新分支（dev/login)
 → 建立初始檔案並提交（project2.txt）
 → 推送到模擬遠端儲存庫(remote-repo.git)
 
@@ -34,7 +34,7 @@ echo "This is a local project2 file for login" > project2.txt
 git add project2.txt
 
 # ➤ 提交檔案並加上說明
-git commit -m "[你的員編]Add project2.txt on dev/login branch"
+git commit -m "[feature][login]Add project2.txt on dev/login branch"
 
 # ➤ 將變更推送到遠端儲存庫
 git push -u origin dev/login
