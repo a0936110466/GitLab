@@ -21,15 +21,10 @@ squash 2eccdeb [feature][project6] commit2
 squash 622492b [feature][project6] commit3
 
 # ➤ 編輯合併後的 commit message
-[devC] 合併三次 commit：Initial + commit2 + commit3
+[feature][project6] 合併三次 commit：Initial + commit2 + commit3
 
 # ➤ 推送到遠端 
-git push origin dev/project6 --force
-
-🔍 為什麼要加 --force？
-因為你使用了 rebase 或 reset 改寫了 commit 歷史，這會讓本地的 commit 與遠端的 commit 不一致。
-Git 預設會拒絕推送「歷史被改寫」的分支，除非你強制推送。
-
+git push origin dev/project6
 
 ```
 
