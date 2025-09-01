@@ -13,16 +13,16 @@ echo -e "Start of file\ncommit1\nEnd of file" > project6.txt
 git config user.name "Dev C"
 git config user.email "c@example.com"
 git add project6.txt
-git commit -m "[devC] Initial commit"
+git commit -m "[feature][project6] Initial commit"
 
 # 第二次commit
 sed -i '2s/.*/commit2/' project6.txt
 git add project6.txt
-git commit -m "[devC] commit2"
+git commit -m "[feature][project6] commit2"
 
 
 # 第三次commit
 sed -i '3s/.*/commit3/' project6.txt
 git add project6.txt
-git commit -m "[devC] commit3"
+git commit -m "[feature][project6] commit3"
 

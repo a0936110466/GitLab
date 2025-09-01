@@ -16,9 +16,9 @@ git branch
 git rebase -i --root
 
 # ➤ 修改為squash，將第二和第三行的 pick 改成 squash 或 s(將該 commit 的內容合併到前一個 commit，並一起編輯 commit message)：
-pick 890f4e8 [devC] Initial commit
-squash 2eccdeb [devC] commit2
-squash 622492b [devC] commit3
+pick   890f4e8 [feature][project6] Initial commit
+squash 2eccdeb [feature][project6] commit2
+squash 622492b [feature][project6] commit3
 
 # ➤ 編輯合併後的 commit message
 [devC] 合併三次 commit：Initial + commit2 + commit3
