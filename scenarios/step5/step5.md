@@ -29,8 +29,9 @@ echo "debug log..." > debug.txt
 git add .
 git commit -m "Add debug log"
 
-echo "Final correct content" >> notes.txt
-git commit -am "Final clean content"
+echo "Final correct content" > summary.txt
+git add .
+git commit -m "Final clean content"
 
 # ➤ 查看歷史紀錄
 git log --oneline
@@ -60,9 +61,11 @@ git reset --hard ORIG_HEAD
 # ➤ 找出那筆「有錯字」的 commit hash
 git log --oneline
 
-# ➤ 假設為 a1b2c3d，就 revert 它（Git 會產生一個新的 commit）
+# ➤ 假設為 a1b2c3d，就 revert 它（Git 會產生一個新的 commit，取消該commit影響）
 git revert a1b2c3d
 
+# ➤ 查看檔案
+cat notes.txt
 ```
 
 💡 步驟五 ：git rebase（整理歷史，把 commit 串起來）
@@ -80,11 +83,11 @@ git commit -am "About 2"
 
 # ➤ 現在切回 main 分支，加一個 commit 模擬其他人也有新東西：
 git checkout main
-echo "main 修改" >> main.log
+echo "main modified" >> main.log
 git add .
-git commit -m "Main 分支的修改"
-# ➤ 把 feature/about 的 commit 重新接在 main 的後面
-git checkout feature/about
+git commit -m "Main modified"
+# ➤ 把 feature/rebase 的 commit 重新接在 main 的後面
+git checkout feature/rebase
 git rebase main
 # ➤ 查看歷史紀錄
 git log --oneline --graph --all
