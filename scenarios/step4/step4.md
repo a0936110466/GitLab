@@ -21,7 +21,7 @@ git status
 
 ```bash
 # ➤ 使用 stash 將未提交的改動暫存起來
-git stash push -m "role UI 開發中"
+git stash push -m "role UI developing"
 
 # ➤ 確認工作目錄變乾淨了(nothing to commit, working tree clean)
 git status
@@ -41,13 +41,13 @@ git commit -m "[bugfix][homepage] fix bug"
 
 ```
 
-💡 步驟四 ：使用 cherry-pick 把 bugfix 撈回主分支
+💡 步驟四 ：使用 cherry-pick 把 bugfix 撈回dev/login分支
 
 ```bash
 # ➤ 查看 bugfix 分支的 commit 記錄，複製commit hash
 git log --oneline
-# ➤ 切回 main 分支
-git checkout main
+# ➤ 切回 dev/login 分支
+git checkout dev/login
 
 # ➤ 使用 cherry-pick 把那筆 commit 拿過來
 git cherry-pick [hash]
@@ -69,7 +69,7 @@ git stash list
 # ➤ 還原剛剛的 stash
 git stash pop
 
-# ➤ 檢查目前 login.js 的內容
-cat login.js
+# ➤ 檢查目前 role.js 的內容
+cat role.js
 
 ```

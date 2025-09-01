@@ -18,18 +18,18 @@ cd reset-lab
 
 ```bash
 # ➤ 建立檔案並提交
-echo "初始內容" > notes.txt
+echo "Initial content" > notes.txt
 git add .
 git commit -m "Init notes"
 
-echo "加了錯字" >> notes.txt
+echo "Added typo" >> notes.txt
 git commit -am "Add typo"
 
-echo "測試中..." >> debug.log
+echo "debug log..." > debug.txt
 git add .
 git commit -m "Add debug log"
 
-echo "完成正確內容" >> notes.txt
+echo "Final correct content" >> notes.txt
 git commit -am "Final clean content"
 
 # ➤ 查看歷史紀錄
@@ -53,6 +53,8 @@ git log --oneline
 
 ```bash
 # ➤ 重新做一次歷史提交（讓 reset-lab 回復）
+#- 通常在執行像 git merge、git reset、git rebase 等操作前，Git 會自動儲存當時的 HEAD 到 ORIG_HEAD，這讓你可以「回到操作前的狀態」
+
 git reset --hard ORIG_HEAD
 
 # ➤ 找出那筆「有錯字」的 commit hash
